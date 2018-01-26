@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   end
 
   def create
-
   end
 
   def edit
@@ -17,9 +16,7 @@ class UsersController < ApplicationController
   end
 
   def update
-
   end
-
 
   def destroy
     @user = User.find(1)

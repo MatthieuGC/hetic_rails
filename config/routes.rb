@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   root to: 'users#index'
 
   resources :jobs, only: :index
-
 end
