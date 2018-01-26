@@ -1,0 +1,10 @@
+<h1>Créer un nouvel utilisateur :</h1>
+<%= form_for @user do |f| %>
+  <%= f.label "Nom d'utilisateur" %><br>
+  <%= f.text_field :username, placeholder: "Insérez votre nom d'utilisateur..." %><br><br>
+
+  <%= f.label "Email" %><br>
+  <%= f.text_area :email, placeholder: 'Insérez votre email...' %><br><br>
+
+  <%= f.submit 'Envoyer' %>
+<% end %>

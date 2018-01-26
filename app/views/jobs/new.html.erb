@@ -1,0 +1,18 @@
+<h1>Créer une nouvelle offre d'emploi :</h1>
+<%= form_for @job do |f| %>
+  <%= f.label 'Titre' %><br>
+  <%= f.text_field :title, placeholder: 'Insérez votre titre...' %><br><br>
+
+  <%= f.label 'Description' %><br>
+  <%= f.text_area :description, placeholder: 'Insérez votre description...' %><br><br>
+
+  <%= f.label 'Salaire moyen proposé' %><br>
+  <%= f.text_field :salary_average, placeholder: 'Insérez le salaire moyen proposé...' %><br><br>
+
+  <%= f.label 'Nom de la société' %><br>
+  <%= f.text_field :company_name, placeholder: 'Insérez le nom de la société...' %><br><br>
+
+  <%= f.hidden_field :user_id, value: 1 %>
+  
+  <%= f.submit 'Envoyer' %>
+<% end %>
