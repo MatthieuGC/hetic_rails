@@ -3,9 +3,12 @@
     <%= link_to 'Accueil', root_path %>
   </li>
   <li>
-    <%= link_to "Liste des offres", jobs_path %>
+    <%= link_to 'Liste des offres', jobs_path %>
   </li>
   <li>
-    <%= link_to "Créer une offre ", new_job_path %>
+    <%= link_to 'Créer une offre', new_job_path %>
+  </li>
+  <li>
+    <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %>
   </li>
 </ul>
