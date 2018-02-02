@@ -1,0 +1,8 @@
+fr:
+  general:
+    truc: Machin
+  views:
+    home:
+      index:
+        title: Liste des offres d'emploi
+        see_more: Consulter
